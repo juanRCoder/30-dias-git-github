@@ -1,5 +1,5 @@
 
-![30 Dias](https://github.com/kontroldev/30dias-git-github/assets/75795616/2361c075-218b-471a-9924-36be3867f6f4)
+![30 Dias](img/phainGitCutPink.webp)
 
 # 30 días de Git y GitHub.
 
