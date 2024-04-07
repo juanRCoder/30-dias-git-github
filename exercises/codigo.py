@@ -1,4 +1,4 @@
 nombre = 'juan'
 apellido = 'ramirez'
-saludo = 'Hola {nombre} {apellido}'
+saludo = 'hola' + nombre + apellido
 print(saludo);
