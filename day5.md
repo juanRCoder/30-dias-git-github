@@ -36,6 +36,6 @@ git log --oneline
 a22g4 segundo commit
 68e7e primero commit
 ```
-OJO: Cada vez que haces un cambio de commit guardalo y no dejes nada sin guardar porque puede haber conflictos.
+OJO: Cada vez que haces un cambio de commit guardalo y no dejes nada sin guardar porque puede haber conflictos especificos.
 
 ## #Dia5LearningGit
