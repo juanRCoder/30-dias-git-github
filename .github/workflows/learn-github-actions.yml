@@ -1,0 +1,38 @@
+# Nombre del archivo
+name: Deploy to GitHub Pages
+
+# Iniciar la accion despues de cada push en la rama main.
+on:
+  push:
+    branches:
+      - main
+
+# Grupo de trabajo 1
+jobs:
+  # Nombre del grupo deploy y que se ejecutara en ubuntu-latest
+  deploy:
+    runs-on: ubuntu-latest
+
+    # Pasos para desplegar 
+    steps:
+      #Acceso al codigo 
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Despliegue y creacion de una rama para el deploy
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+
+        # Agregar opciones para deployar como el token y la direccion del html
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./
+
+      # Despliegue2 y creacion de una rama para el deploy2
+      - name: Second deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+
+        # Agregar opciones para deployar como el token y la direccion del html
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./src/dashboard
