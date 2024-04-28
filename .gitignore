@@ -1,5 +1,0 @@
-#Vamos a ognorar esto
-#   *.txt           -> ignora todos los archivos que terminen con txt
-#   !readme.txt     -> no ignores este archivo.
-#   folder/         -> ignorar repositorio.
-#   git log --oneline --graph --all --pretty=format:'%C(auto)%h%d %s %C(black)%C(bold)%cr'
